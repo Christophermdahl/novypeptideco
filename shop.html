@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop premium research peptides — Retatrutide, Tirzepatide, Semaglutide, BPC-157, Tesamorelin, Sermorelin, NAD+ and more. Lab-tested, cGMP certified." />
+  <title>Shop Research Peptides | Novy Peptide Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== AGE GATE ============== -->
+  <div class="agegate-overlay" id="ageGate">
+    <div class="agegate-modal">
+      <img src="IMG_8146.jpeg" alt="Novy Peptide Co." class="agegate-logo" />
+      <h2>Verify Your Age</h2>
+      <p>You must be 21 years or older to enter this site. All products are intended for research use only.</p>
+      <div class="agegate-btns">
+        <button class="btn btn-primary btn-lg" onclick="enterSite()">I am 21 or older · Enter</button>
+        <button class="btn btn-ghost" onclick="exitSite()">I am under 21</button>
+      </div>
+      <p class="agegate-fine">By entering, you confirm you are 21+ and agree to our Terms of Service. All products are sold for in vitro research purposes only.</p>
+    </div>
+  </div>
+
+  <!-- ============== ANNOUNCEMENT ============== -->
+  <div class="announce">
+    Free shipping on orders over $150 · Use code <strong>NOVY10</strong> for 10% off your first order
+  </div>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-brand">
+        <img src="IMG_8146.jpeg" alt="Novy Peptide Co." />
+        <span>NOVY PEPTIDE CO.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>Shop</span>
+      </div>
+      <h1>All Research Peptides</h1>
+      <p class="lede">Pharmaceutical-grade peptides, independently lab-tested and produced in certified cGMP facilities. Choose from single compounds, premium stacks, and research supplies.</p>
+    </div>
+  </section>
+
+  <!-- ============== SHOP ============== -->
+  <section class="section-sm">
+    <div class="container">
+
+      <div class="shop-bar">
+        <div class="shop-filters">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="weight">Weight Management</button>
+          <button class="filter-chip" data-filter="healing">Healing &amp; Recovery</button>
+          <button class="filter-chip" data-filter="gh">Growth Hormone</button>
+          <button class="filter-chip" data-filter="longevity">Longevity</button>
+          <button class="filter-chip" data-filter="stacks">Stacks</button>
+          <button class="filter-chip" data-filter="supplies">Research Supplies</button>
+        </div>
+        <div class="shop-sort">
+          <span class="shop-count" id="shopCount">21 products</span>
+          <select id="sortBy" onchange="sortProducts()">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name">Name (A–Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+
+        <div class="product-card" data-product-id="reta-10" data-cat="weight" data-price="109" data-name="Retatrutide 10mg">
+          <a href="product.html?id=reta-10">
+            <div class="product-media"><span class="product-tag tag-best">Best Seller</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Retatrutide 10mg</h3>
+              <p class="product-blurb">Next-gen GLP-1/GIP/Glucagon triple agonist for body-composition research.</p>
+              <div class="product-foot"><div class="product-price">$109</div><button class="product-add" onclick="addToCart(event, 'Retatrutide 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="reta-20" data-cat="weight" data-price="189" data-name="Retatrutide 20mg">
+          <a href="product.html?id=reta-20">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Retatrutide 20mg</h3>
+              <p class="product-blurb">Higher-dose vial for extended research protocols and larger cohorts.</p>
+              <div class="product-foot"><div class="product-price">$189</div><button class="product-add" onclick="addToCart(event, 'Retatrutide 20mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="reta-30" data-cat="weight" data-price="259" data-name="Retatrutide 30mg">
+          <a href="product.html?id=reta-30">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Retatrutide 30mg</h3>
+              <p class="product-blurb">30mg vial — value concentration for long-duration studies.</p>
+              <div class="product-foot"><div class="product-price">$259</div><button class="product-add" onclick="addToCart(event, 'Retatrutide 30mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="reta-50" data-cat="weight" data-price="389" data-name="Retatrutide 50mg">
+          <a href="product.html?id=reta-50">
+            <div class="product-media"><span class="product-tag tag-sale">Best Value</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Retatrutide 50mg</h3>
+              <p class="product-blurb">Flagship 50mg vial. Our best per-mg value for serious researchers.</p>
+              <div class="product-foot"><div class="product-price">$389</div><button class="product-add" onclick="addToCart(event, 'Retatrutide 50mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="tirz-10" data-cat="weight" data-price="89" data-name="Tirzepatide 10mg">
+          <a href="product.html?id=tirz-10">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Tirzepatide 10mg</h3>
+              <p class="product-blurb">Dual GLP-1/GIP agonist. 10mg vial for early-stage research.</p>
+              <div class="product-foot"><div class="product-price">$89</div><button class="product-add" onclick="addToCart(event, 'Tirzepatide 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="tirz-30" data-cat="weight" data-price="149" data-name="Tirzepatide 30mg">
+          <a href="product.html?id=tirz-30">
+            <div class="product-media"><span class="product-tag tag-best">Best Seller</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Tirzepatide 30mg</h3>
+              <p class="product-blurb">Our most popular dual-agonist vial. Balance of value and volume.</p>
+              <div class="product-foot"><div class="product-price">$149</div><button class="product-add" onclick="addToCart(event, 'Tirzepatide 30mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="tirz-60" data-cat="weight" data-price="249" data-name="Tirzepatide 60mg">
+          <a href="product.html?id=tirz-60">
+            <div class="product-media"><span class="product-tag tag-sale">Best Value</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Tirzepatide 60mg</h3>
+              <p class="product-blurb">High-volume 60mg vial for extended research protocols.</p>
+              <div class="product-foot"><div class="product-price">$249</div><button class="product-add" onclick="addToCart(event, 'Tirzepatide 60mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="sema-30" data-cat="weight" data-price="129" data-name="Semaglutide 30mg">
+          <a href="product.html?id=sema-30">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Semaglutide 30mg</h3>
+              <p class="product-blurb">Established GLP-1 agonist. Reliable reference compound for GLP-1 research.</p>
+              <div class="product-foot"><div class="product-price">$129</div><button class="product-add" onclick="addToCart(event, 'Semaglutide 30mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="bpc-10" data-cat="healing" data-price="59" data-name="BPC-157 10mg">
+          <a href="product.html?id=bpc-10">
+            <div class="product-media"><span class="product-tag tag-best">Best Seller</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Healing &amp; Recovery</div>
+              <h3 class="product-name">BPC-157 10mg</h3>
+              <p class="product-blurb">Body Protection Compound — the gold standard for healing &amp; recovery research.</p>
+              <div class="product-foot"><div class="product-price">$59</div><button class="product-add" onclick="addToCart(event, 'BPC-157 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="wolv-20" data-cat="healing" data-price="119" data-name="Wolverine 20mg">
+          <a href="product.html?id=wolv-20">
+            <div class="product-media"><span class="product-tag tag-new">New</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Healing &amp; Recovery</div>
+              <h3 class="product-name">Wolverine 20mg</h3>
+              <p class="product-blurb">Proprietary healing blend. Advanced recovery protocols and tissue research.</p>
+              <div class="product-foot"><div class="product-price">$119</div><button class="product-add" onclick="addToCart(event, 'Wolverine 20mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="tesa-10" data-cat="gh" data-price="89" data-name="Tesamorelin 10mg">
+          <a href="product.html?id=tesa-10">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Growth Hormone</div>
+              <h3 class="product-name">Tesamorelin 10mg</h3>
+              <p class="product-blurb">GHRH analog. Research-grade compound for GH-axis studies.</p>
+              <div class="product-foot"><div class="product-price">$89</div><button class="product-add" onclick="addToCart(event, 'Tesamorelin 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="tesa-20" data-cat="gh" data-price="149" data-name="Tesamorelin 20mg">
+          <a href="product.html?id=tesa-20">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Growth Hormone</div>
+              <h3 class="product-name">Tesamorelin 20mg</h3>
+              <p class="product-blurb">Higher-dose vial for extended GHRH research protocols.</p>
+              <div class="product-foot"><div class="product-price">$149</div><button class="product-add" onclick="addToCart(event, 'Tesamorelin 20mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="serm-10" data-cat="gh" data-price="69" data-name="Sermorelin 10mg">
+          <a href="product.html?id=serm-10">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Growth Hormone</div>
+              <h3 class="product-name">Sermorelin 10mg</h3>
+              <p class="product-blurb">Classic GHRH analog for foundational growth-hormone research.</p>
+              <div class="product-foot"><div class="product-price">$69</div><button class="product-add" onclick="addToCart(event, 'Sermorelin 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="cjc-1295" data-cat="gh" data-price="79" data-name="CJC-1295">
+          <a href="product.html?id=cjc-1295">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Growth Hormone</div>
+              <h3 class="product-name">CJC-1295</h3>
+              <p class="product-blurb">Long-acting GHRH research peptide. Popular pairing with Ipamorelin/Sermorelin.</p>
+              <div class="product-foot"><div class="product-price">$79</div><button class="product-add" onclick="addToCart(event, 'CJC-1295')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="motc-10" data-cat="longevity" data-price="99" data-name="MOTS-c 10mg">
+          <a href="product.html?id=motc-10">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Longevity</div>
+              <h3 class="product-name">MOTS-c 10mg</h3>
+              <p class="product-blurb">Mitochondrial-derived peptide. Frontier research in metabolism &amp; aging.</p>
+              <div class="product-foot"><div class="product-price">$99</div><button class="product-add" onclick="addToCart(event, 'MOTS-c 10mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="nad-500" data-cat="longevity" data-price="119" data-name="NAD+ 500mg">
+          <a href="product.html?id=nad-500">
+            <div class="product-media"><span class="product-tag tag-best">Popular</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Longevity</div>
+              <h3 class="product-name">NAD+ 500mg</h3>
+              <p class="product-blurb">High-dose NAD+ for cellular energy &amp; longevity research.</p>
+              <div class="product-foot"><div class="product-price">$119</div><button class="product-add" onclick="addToCart(event, 'NAD+ 500mg')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="mt2" data-cat="longevity" data-price="49" data-name="Melanotan 2">
+          <a href="product.html?id=mt2">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Research</div>
+              <h3 class="product-name">Melanotan 2</h3>
+              <p class="product-blurb">Melanocortin receptor agonist. For pigmentation-pathway research.</p>
+              <div class="product-foot"><div class="product-price">$49</div><button class="product-add" onclick="addToCart(event, 'Melanotan 2')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="glow" data-cat="stacks" data-price="179" data-name="GLOW">
+          <a href="product.html?id=glow">
+            <div class="product-media"><span class="product-tag tag-new">Blend</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Premium Stack</div>
+              <h3 class="product-name">GLOW</h3>
+              <p class="product-blurb">Signature skin &amp; vitality blend. Curated proprietary peptide stack.</p>
+              <div class="product-foot"><div class="product-price">$179</div><button class="product-add" onclick="addToCart(event, 'GLOW')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="klow" data-cat="stacks" data-price="229" data-name="KLOW">
+          <a href="product.html?id=klow">
+            <div class="product-media"><span class="product-tag tag-new">Blend</span><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Premium Stack</div>
+              <h3 class="product-name">KLOW</h3>
+              <p class="product-blurb">Advanced recovery + regeneration blend. Formulated for serious protocols.</p>
+              <div class="product-foot"><div class="product-price">$229</div><button class="product-add" onclick="addToCart(event, 'KLOW')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="product-card" data-product-id="bac-water" data-cat="supplies" data-price="8" data-name="Bacteriostatic Water 30ml">
+          <a href="product.html?id=bac-water">
+            <div class="product-media"><div class="vial"></div></div>
+            <div class="product-body">
+              <div class="product-cat">Research Supplies</div>
+              <h3 class="product-name">Bacteriostatic Water 30ml</h3>
+              <p class="product-blurb">0.9% benzyl alcohol preserved sterile water. Essential for reconstitution.</p>
+              <div class="product-foot"><div class="product-price">$8</div><button class="product-add" onclick="addToCart(event, 'BAC Water 30ml')">Add</button></div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div id="noResults" style="display:none; text-align:center; padding:80px 0; color:var(--text-muted);">
+        <p style="font-size:1rem;">No products match this filter.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== OPT-IN ============== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="optin">
+        <div class="optin-copy">
+          <div class="eyebrow" style="color:#4A9BFF;">Researcher Circle</div>
+          <h2>Get 10% off your first order.</h2>
+          <p>Join the Novy Researcher Circle for new-product drops, protocol insights, and members-only pricing.</p>
+        </div>
+        <form class="optin-form" onsubmit="handleOptin(event)" data-gohighlevel-form="researcher-circle">
+          <input type="text" name="first_name" placeholder="First name" required />
+          <input type="email" name="email" placeholder="Email address" required />
+          <input type="tel" name="phone" placeholder="Phone (optional)" />
+          <label class="optin-check"><input type="checkbox" name="sms_consent" value="yes" /> I agree to receive SMS updates. Msg &amp; data rates may apply.</label>
+          <button type="submit">Send me my 10% code</button>
+          <p class="optin-fine">No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="IMG_8146.jpeg" alt="Novy Peptide Co." />
+          <p>Premium research peptides, lab-tested and produced in certified cGMP facilities. Built for researchers who demand precision.</p>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html?cat=weight">Weight Management</a></li>
+          <li><a href="shop.html?cat=healing">Healing &amp; Recovery</a></li>
+          <li><a href="shop.html?cat=gh">Growth Hormone</a></li>
+          <li><a href="shop.html?cat=longevity">Longevity</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="mailto:support@novypeptideco.com">support@novypeptideco.com</a></li>
+          <li><a href="contact.html">Support Portal</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-disclaimer">
+        <strong style="color: rgba(255,255,255,0.75);">Research Disclaimer:</strong> All products sold by Novy Peptide Co. are intended strictly for in vitro research, laboratory studies, and scientific investigation. These products are not approved by the FDA for human or veterinary consumption, medical treatment, or diagnostic use. By purchasing, you confirm you are a qualified researcher 21 years of age or older.
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Novy Peptide Co. All rights reserved.</p>
+        <p>Made for research. For Research Use Only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">✓ Added to cart</div>
+
+  <script>
+    function enterSite(){ sessionStorage.setItem('novyAge','1'); document.getElementById('ageGate').classList.add('hidden'); }
+    function exitSite(){ window.location.href='https://www.google.com'; }
+    if (sessionStorage.getItem('novyAge')==='1') document.getElementById('ageGate').classList.add('hidden');
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+    function addToCart(e, name){
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.textContent = '✓ ' + name + ' added to cart';
+      toast.classList.add('show');
+      const count = document.querySelector('.cart-count');
+      count.textContent = parseInt(count.textContent||'0') + 1;
+      setTimeout(()=>toast.classList.remove('show'), 2600);
+    }
+    function handleOptin(e){
+      e.preventDefault();
+      const form = e.target;
+      // GHL webhook: fetch('https://services.leadconnectorhq.com/hooks/YOUR_WEBHOOK_ID', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      form.innerHTML = '<div style="text-align:center; padding:20px 0;"><h3 style="color:#fff; margin-bottom:10px;">✓ You\'re on the list</h3><p style="color:rgba(255,255,255,0.75);">Check your email for your 10% off code.</p></div>';
+    }
+
+    // Shop filtering / sorting
+    const grid = document.getElementById('productGrid');
+    const cards = Array.from(grid.querySelectorAll('.product-card'));
+    const chips = document.querySelectorAll('.filter-chip');
+    const shopCount = document.getElementById('shopCount');
+    const noResults = document.getElementById('noResults');
+
+    function applyFilter(filter){
+      let visible = 0;
+      cards.forEach(card => {
+        const show = filter === 'all' || card.dataset.cat === filter;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      shopCount.textContent = visible + ' product' + (visible === 1 ? '' : 's');
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      applyFilter(chip.dataset.filter);
+    }));
+    function sortProducts(){
+      const mode = document.getElementById('sortBy').value;
+      const sorted = cards.slice().sort((a, b) => {
+        if (mode === 'price-asc')  return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+        if (mode === 'price-desc') return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+        if (mode === 'name')       return a.dataset.name.localeCompare(b.dataset.name);
+        return 0;
+      });
+      sorted.forEach(card => grid.appendChild(card));
+    }
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      if (cat) {
+        const chip = document.querySelector('.filter-chip[data-filter="' + cat + '"]');
+        if (chip) chip.click();
+      }
+    })();
+  </script>
+</body>
+</html>

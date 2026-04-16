@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research-grade peptide from Novy Peptide Co. Lab-tested, cGMP-certified, for in vitro research use only." />
+  <title>Product | Novy Peptide Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- AGE GATE -->
+  <div class="agegate-overlay" id="ageGate">
+    <div class="agegate-modal">
+      <img src="IMG_8146.jpeg" alt="Novy Peptide Co." class="agegate-logo" />
+      <h2>Verify Your Age</h2>
+      <p>You must be 21 years or older to enter this site. All products are intended for research use only.</p>
+      <div class="agegate-btns">
+        <button class="btn btn-primary btn-lg" onclick="enterSite()">I am 21 or older · Enter</button>
+        <button class="btn btn-ghost" onclick="exitSite()">I am under 21</button>
+      </div>
+      <p class="agegate-fine">By entering, you confirm you are 21+ and agree to our Terms of Service. All products are sold for in vitro research purposes only.</p>
+    </div>
+  </div>
+
+  <div class="announce">Free shipping on orders over $150 · Use code <strong>NOVY10</strong> for 10% off your first order</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><span>NOVY PEPTIDE CO.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+        <button class="icon-btn" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+  </header>
+
+  <!-- PRODUCT -->
+  <section class="section-sm" style="padding-top:36px;">
+    <div class="container">
+      <div class="breadcrumb" style="margin-bottom:28px;">
+        <a href="index.html">Home</a><span class="sep">/</span><a href="shop.html">Shop</a><span class="sep">/</span><span id="crumbName">Product</span>
+      </div>
+
+      <div class="product-layout">
+
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="product-gallery-main"><div class="vial"></div></div>
+          <div class="product-thumbs">
+            <div class="product-thumb active"><div class="vial"></div></div>
+            <div class="product-thumb"><div class="vial"></div></div>
+            <div class="product-thumb"><div class="vial"></div></div>
+            <div class="product-thumb"><div class="vial"></div></div>
+          </div>
+        </div>
+
+        <!-- Details -->
+        <div class="product-details" data-product-id="tirz-30">
+          <div class="pdp-cat" id="pdpCat">Weight Management</div>
+          <h1 class="pdp-title" id="pdpTitle">Tirzepatide 30mg</h1>
+
+          <div class="pdp-rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 · 218 verified researcher reviews</span>
+          </div>
+
+          <div class="pdp-price" id="pdpPrice">$149</div>
+          <div class="pdp-stock">In stock · Ships in 24 hours</div>
+
+          <p class="pdp-blurb" id="pdpBlurb">
+            Tirzepatide is a dual GIP/GLP-1 receptor agonist research peptide. Our 30mg vial is produced in certified cGMP facilities and independently verified for purity and mass via HPLC and mass spectrometry. For in vitro research use only.
+          </p>
+
+          <div class="pdp-options">
+            <label>Dose</label>
+            <div class="variant-list" id="variantList">
+              <button class="variant-chip" data-id="tirz-10">10mg · $89</button>
+              <button class="variant-chip active" data-id="tirz-30">30mg · $149</button>
+              <button class="variant-chip" data-id="tirz-60">60mg · $249</button>
+            </div>
+          </div>
+
+          <div class="pdp-qty-row">
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease">−</button>
+              <input type="text" class="qty-input" id="qty" value="1" readonly />
+              <button class="qty-btn" onclick="changeQty(1)" aria-label="Increase">+</button>
+            </div>
+            <div class="pdp-buy">
+              <button class="btn btn-primary" onclick="addToCart(event, document.getElementById('pdpTitle').textContent)">Add to Cart</button>
+              <button class="btn btn-dark">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="pdp-perks">
+            <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l-4 8a4 4 0 0 0 3 6h8a4 4 0 0 0 3-6l-4-8V2"/></svg> 3rd-Party Lab Tested</div>
+            <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> cGMP Certified</div>
+            <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg> Fast Discreet Shipping</div>
+            <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg> Satisfaction Guarantee</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="pdp-tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="desc">Description</button>
+          <button class="tab-btn" data-tab="specs">Specifications</button>
+          <button class="tab-btn" data-tab="reconstitution">Reconstitution</button>
+          <button class="tab-btn" data-tab="reviews">Reviews</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="desc">
+          <p>Every Novy Peptide Co. vial is synthesized under strict cGMP controls, lyophilized, sealed under nitrogen, and independently verified by a third-party lab before shipment. Each batch is accompanied by a unique Certificate of Analysis (COA) that documents purity, identity, and mass.</p>
+          <p>Our peptides are intended exclusively for in vitro research and scientific investigation. They are not drugs, dietary supplements, or medical devices, and are not intended for human or veterinary consumption.</p>
+          <ul>
+            <li>Pharmaceutical-grade peptide synthesis</li>
+            <li>Verified purity via HPLC (&gt;99%)</li>
+            <li>Mass confirmed via mass spectrometry</li>
+            <li>Sealed under inert nitrogen atmosphere</li>
+            <li>Batch-unique Certificate of Analysis</li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" data-panel="specs">
+          <table class="spec-table">
+            <tr><td>CAS Number</td><td>—</td></tr>
+            <tr><td>Molecular Formula</td><td>—</td></tr>
+            <tr><td>Molecular Weight</td><td>—</td></tr>
+            <tr><td>Purity</td><td>&gt;99% (HPLC verified)</td></tr>
+            <tr><td>Form</td><td>Lyophilized powder</td></tr>
+            <tr><td>Storage (sealed)</td><td>Room temperature, away from light</td></tr>
+            <tr><td>Storage (reconstituted)</td><td>Refrigerated, 2–8°C</td></tr>
+            <tr><td>Recommended Solvent</td><td>Bacteriostatic water</td></tr>
+          </table>
+        </div>
+
+        <div class="tab-panel" data-panel="reconstitution">
+          <p>Reconstitution guidance is provided for the informed researcher. Always follow your approved laboratory protocol.</p>
+          <ul>
+            <li>Use bacteriostatic water (0.9% benzyl alcohol-preserved sterile water).</li>
+            <li>Inject diluent gently down the side of the vial to avoid disturbing the lyophilized peptide.</li>
+            <li>Do not shake vigorously — gently swirl until fully dissolved.</li>
+            <li>Store reconstituted solutions refrigerated at 2–8°C.</li>
+            <li>Use aseptic technique at all times.</li>
+          </ul>
+          <blockquote>For in vitro research and laboratory investigation only. Not for human or veterinary use.</blockquote>
+        </div>
+
+        <div class="tab-panel" data-panel="reviews">
+          <div class="reviews-grid">
+            <div class="review-card"><div class="review-stars">★★★★★</div><p>"COA was on point. Purity results matched independent verification. This is my new go-to source."</p><div class="review-author"><div class="review-avatar">DR</div><div><div class="review-name">David R.</div><div class="review-role">Verified researcher</div></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p>"Packaging is on another level. Sealed, labeled, and the vials are pristine. Shipped in 2 days."</p><div class="review-author"><div class="review-avatar">MS</div><div><div class="review-name">Maya S.</div><div class="review-role">Lab coordinator</div></div></div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><p>"Been sourcing peptides for three years. Novy is the cleanest operation I've come across."</p><div class="review-author"><div class="review-avatar">JT</div><div><div class="review-name">Jordan T.</div><div class="review-role">Independent researcher</div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section-sm section-light">
+    <div class="container">
+      <div class="section-head-row"><div><h2>You may also like</h2><p class="lede">Researchers who viewed this also added:</p></div></div>
+      <div class="product-grid">
+        <div class="product-card"><a href="product.html?id=bpc-10">
+          <div class="product-media"><div class="vial"></div></div>
+          <div class="product-body"><div class="product-cat">Healing</div><h3 class="product-name">BPC-157 10mg</h3><p class="product-blurb">Gold-standard healing &amp; recovery research peptide.</p><div class="product-foot"><div class="product-price">$59</div><button class="product-add" onclick="addToCart(event, 'BPC-157 10mg')">Add</button></div></div>
+        </a></div>
+        <div class="product-card"><a href="product.html?id=sema-30">
+          <div class="product-media"><div class="vial"></div></div>
+          <div class="product-body"><div class="product-cat">Weight</div><h3 class="product-name">Semaglutide 30mg</h3><p class="product-blurb">Established GLP-1 reference compound.</p><div class="product-foot"><div class="product-price">$129</div><button class="product-add" onclick="addToCart(event, 'Semaglutide 30mg')">Add</button></div></div>
+        </a></div>
+        <div class="product-card"><a href="product.html?id=cjc-1295">
+          <div class="product-media"><div class="vial"></div></div>
+          <div class="product-body"><div class="product-cat">Growth Hormone</div><h3 class="product-name">CJC-1295</h3><p class="product-blurb">Long-acting GHRH research peptide.</p><div class="product-foot"><div class="product-price">$79</div><button class="product-add" onclick="addToCart(event, 'CJC-1295')">Add</button></div></div>
+        </a></div>
+        <div class="product-card"><a href="product.html?id=bac-water">
+          <div class="product-media"><div class="vial"></div></div>
+          <div class="product-body"><div class="product-cat">Supplies</div><h3 class="product-name">Bacteriostatic Water 30ml</h3><p class="product-blurb">Essential reconstitution solvent.</p><div class="product-foot"><div class="product-price">$8</div><button class="product-add" onclick="addToCart(event, 'BAC Water')">Add</button></div></div>
+        </a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><p>Premium research peptides, lab-tested and produced in certified cGMP facilities. Built for researchers who demand precision.</p></div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html?cat=weight">Weight Management</a></li><li><a href="shop.html?cat=healing">Healing &amp; Recovery</a></li><li><a href="shop.html?cat=gh">Growth Hormone</a></li><li><a href="shop.html?cat=longevity">Longevity</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="shipping.html">Shipping Policy</a></li><li><a href="refund.html">Refund Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:support@novypeptideco.com">support@novypeptideco.com</a></li><li><a href="contact.html">Support Portal</a></li></ul></div>
+      </div>
+      <div class="footer-disclaimer"><strong style="color: rgba(255,255,255,0.75);">Research Disclaimer:</strong> All products sold by Novy Peptide Co. are intended strictly for in vitro research, laboratory studies, and scientific investigation. These products are not approved by the FDA for human or veterinary consumption, medical treatment, or diagnostic use. By purchasing, you confirm you are a qualified researcher 21 years of age or older.</div>
+      <div class="footer-bottom"><p>© 2026 Novy Peptide Co. All rights reserved.</p><p>Made for research. For Research Use Only.</p></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">✓ Added to cart</div>
+
+  <script>
+    function enterSite(){ sessionStorage.setItem('novyAge','1'); document.getElementById('ageGate').classList.add('hidden'); }
+    function exitSite(){ window.location.href='https://www.google.com'; }
+    if (sessionStorage.getItem('novyAge')==='1') document.getElementById('ageGate').classList.add('hidden');
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+    function addToCart(e, name){
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.textContent = '✓ ' + name + ' added to cart';
+      toast.classList.add('show');
+      const count = document.querySelector('.cart-count');
+      count.textContent = parseInt(count.textContent||'0') + 1;
+      setTimeout(()=>toast.classList.remove('show'), 2600);
+    }
+    // Quantity
+    function changeQty(delta){
+      const input = document.getElementById('qty');
+      const v = Math.max(1, (parseInt(input.value)||1) + delta);
+      input.value = v;
+    }
+    // Tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelector('[data-panel="' + btn.dataset.tab + '"]').classList.add('active');
+    }));
+    // Variant chips
+    document.querySelectorAll('.variant-chip').forEach(chip => chip.addEventListener('click', () => {
+      document.querySelectorAll('.variant-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+    }));
+
+    // ---------- Product lookup by ?id= ----------
+    // In production: WooCommerce will serve real product pages. This is a lightweight preview
+    // that swaps title/price/category when the URL includes ?id=...
+    const PRODUCTS = {
+      'reta-10':  {name:'Retatrutide 10mg',  price:'$109', cat:'Weight Management', blurb:'Next-gen GLP-1/GIP/Glucagon triple agonist for body-composition research.'},
+      'reta-20':  {name:'Retatrutide 20mg',  price:'$189', cat:'Weight Management', blurb:'Higher-dose vial for extended research protocols.'},
+      'reta-30':  {name:'Retatrutide 30mg',  price:'$259', cat:'Weight Management', blurb:'30mg vial — value concentration for long-duration studies.'},
+      'reta-50':  {name:'Retatrutide 50mg',  price:'$389', cat:'Weight Management', blurb:'Flagship 50mg vial. Our best per-mg value.'},
+      'tirz-10':  {name:'Tirzepatide 10mg',  price:'$89',  cat:'Weight Management', blurb:'Dual GLP-1/GIP agonist. 10mg vial for early-stage research.'},
+      'tirz-30':  {name:'Tirzepatide 30mg',  price:'$149', cat:'Weight Management', blurb:'Our most popular dual-agonist vial.'},
+      'tirz-60':  {name:'Tirzepatide 60mg',  price:'$249', cat:'Weight Management', blurb:'High-volume 60mg vial for extended protocols.'},
+      'sema-30':  {name:'Semaglutide 30mg',  price:'$129', cat:'Weight Management', blurb:'Established GLP-1 reference compound.'},
+      'bpc-10':   {name:'BPC-157 10mg',      price:'$59',  cat:'Healing & Recovery',blurb:'Body Protection Compound — the gold standard for healing research.'},
+      'wolv-20':  {name:'Wolverine 20mg',    price:'$119', cat:'Healing & Recovery',blurb:'Proprietary healing blend for advanced recovery protocols.'},
+      'tesa-10':  {name:'Tesamorelin 10mg',  price:'$89',  cat:'Growth Hormone',    blurb:'GHRH analog for GH-axis studies.'},
+      'tesa-20':  {name:'Tesamorelin 20mg',  price:'$149', cat:'Growth Hormone',    blurb:'Higher-dose vial for extended GHRH research.'},
+      'serm-10':  {name:'Sermorelin 10mg',   price:'$69',  cat:'Growth Hormone',    blurb:'Classic GHRH analog for foundational research.'},
+      'cjc-1295': {name:'CJC-1295',          price:'$79',  cat:'Growth Hormone',    blurb:'Long-acting GHRH research peptide.'},
+      'motc-10':  {name:'MOTS-c 10mg',       price:'$99',  cat:'Longevity',         blurb:'Mitochondrial-derived peptide for metabolism & aging research.'},
+      'nad-500':  {name:'NAD+ 500mg',        price:'$119', cat:'Longevity',         blurb:'High-dose NAD+ for cellular energy & longevity research.'},
+      'mt2':      {name:'Melanotan 2',       price:'$49',  cat:'Research',          blurb:'Melanocortin receptor agonist for pigmentation research.'},
+      'glow':     {name:'GLOW',              price:'$179', cat:'Premium Stack',     blurb:'Signature skin & vitality blend. Curated peptide stack.'},
+      'klow':     {name:'KLOW',              price:'$229', cat:'Premium Stack',     blurb:'Advanced recovery + regeneration blend.'},
+      'bac-water':{name:'Bacteriostatic Water 30ml', price:'$8', cat:'Research Supplies', blurb:'0.9% benzyl alcohol preserved sterile water.'},
+    };
+    (function(){
+      const id = new URLSearchParams(window.location.search).get('id');
+      if (!id || !PRODUCTS[id]) return;
+      const p = PRODUCTS[id];
+      document.getElementById('pdpTitle').textContent = p.name;
+      document.getElementById('pdpPrice').textContent = p.price;
+      document.getElementById('pdpCat').textContent = p.cat;
+      document.getElementById('pdpBlurb').textContent = p.blurb + ' Produced in certified cGMP facilities and independently verified for purity. For in vitro research use only.';
+      document.getElementById('crumbName').textContent = p.name;
+      document.title = p.name + ' | Novy Peptide Co.';
+    })();
+  </script>
+</body>
+</html>

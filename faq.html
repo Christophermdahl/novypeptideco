@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frequently asked questions about Novy Peptide Co. products, ordering, shipping, quality, and research use." />
+  <title>FAQ | Novy Peptide Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="agegate-overlay" id="ageGate">
+    <div class="agegate-modal">
+      <img src="IMG_8146.jpeg" alt="Novy Peptide Co." class="agegate-logo" />
+      <h2>Verify Your Age</h2>
+      <p>You must be 21 years or older to enter this site. All products are intended for research use only.</p>
+      <div class="agegate-btns">
+        <button class="btn btn-primary btn-lg" onclick="enterSite()">I am 21 or older · Enter</button>
+        <button class="btn btn-ghost" onclick="exitSite()">I am under 21</button>
+      </div>
+      <p class="agegate-fine">By entering, you confirm you are 21+ and agree to our Terms of Service.</p>
+    </div>
+  </div>
+
+  <div class="announce">Free shipping on orders over $150 · Use code <strong>NOVY10</strong> for 10% off your first order</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><span>NOVY PEPTIDE CO.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+        <button class="icon-btn" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>FAQ</span></div>
+      <h1>Frequently Asked Questions</h1>
+      <p class="lede">Everything you need to know about ordering, quality, shipping, and research use. Can't find your answer? Reach out to our support team.</p>
+    </div>
+  </section>
+
+  <!-- ORDERING -->
+  <section class="section-sm">
+    <div class="container-narrow">
+      <div class="eyebrow" style="margin-bottom:28px;">Ordering &amp; Payments</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I place an order?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Browse our shop, select your products, and add them to your cart. At checkout, enter your shipping information and payment details. You'll receive an order confirmation email immediately.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>We accept major credit and debit cards, as well as select cryptocurrency payments. All transactions are processed securely through our encrypted payment gateway.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I modify or cancel my order after placing it?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>We process orders quickly. If you need to make changes, contact us within 1 hour of placing your order at support@novypeptideco.com. After processing begins, we may not be able to modify the order.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you offer bulk or wholesale pricing?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Yes — we offer volume pricing for qualified research institutions and repeat customers. Contact our team at support@novypeptideco.com with your requirements for a custom quote.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY -->
+  <section class="section-sm section-light">
+    <div class="container-narrow">
+      <div class="eyebrow" style="margin-bottom:28px;">Quality &amp; Testing</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Are your peptides tested?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Every batch is independently tested by a third-party laboratory. We verify purity via HPLC (>99%) and mass via mass spectrometry. A batch-unique Certificate of Analysis is available for every product.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What does cGMP mean?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>cGMP stands for Current Good Manufacturing Practice. It refers to regulations enforced by the FDA that ensure products are consistently produced and controlled according to quality standards. All Novy Peptide Co. products are synthesized in certified cGMP facilities.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I request a Certificate of Analysis?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Absolutely. Every order ships with access to its batch-specific COA. If you need additional documentation or have questions about specific test results, email support@novypeptideco.com and we'll send it right over.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How should I store my peptides?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Sealed lyophilized vials can be stored at room temperature, away from direct light and moisture. Once reconstituted, store at 2–8°C (refrigerated). Always use aseptic technique when handling.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHIPPING -->
+  <section class="section-sm">
+    <div class="container-narrow">
+      <div class="eyebrow" style="margin-bottom:28px;">Shipping &amp; Delivery</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How long does shipping take?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Orders placed before 2pm EST on business days ship the same day. Standard domestic shipping takes 2–5 business days. Expedited options are available at checkout.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you offer free shipping?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Yes — all orders over $150 qualify for free standard shipping within the continental United States.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you ship internationally?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Currently we ship within the United States only. International shipping options may be available in the future — join our email list to be notified.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is my order shipped discreetly?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Yes. All orders ship in plain, unmarked packaging with no external branding or product descriptions.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETURNS -->
+  <section class="section-sm section-light">
+    <div class="container-narrow">
+      <div class="eyebrow" style="margin-bottom:28px;">Returns &amp; Refunds</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is your refund policy?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>If a product doesn't meet our documented specifications, we'll replace or refund it. Contact support@novypeptideco.com within 30 days of delivery with your order number and a description of the issue. Please review our full <a href="refund.html">Refund Policy</a> for details.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I return an opened vial?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Due to the nature of research materials, we cannot accept returns on opened or reconstituted vials. Sealed, unopened products in their original packaging may be eligible for return within 30 days.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH USE -->
+  <section class="section-sm">
+    <div class="container-narrow">
+      <div class="eyebrow" style="margin-bottom:28px;">Research Use &amp; Compliance</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is "For Research Use Only"?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>All Novy Peptide Co. products are sold strictly for in vitro research, laboratory studies, and scientific investigation. They are not drugs, dietary supplements, or medical devices. They are not intended for human or veterinary consumption, and are not approved by the FDA for medical treatment or diagnostic use.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do I need to be a licensed researcher to purchase?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>By placing an order, you confirm that you are at least 21 years of age and that the products will be used strictly for lawful research purposes. We reserve the right to decline or cancel orders at our discretion.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Are peptides legal to buy?<span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a"><p>Research peptides are legal to purchase for in vitro research purposes in the United States. Buyers are responsible for understanding and complying with all applicable laws in their jurisdiction.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container" style="text-align:center; max-width:640px;">
+      <h2>Still have questions?</h2>
+      <p class="lede" style="margin:12px auto 28px;">Our support team is here to help. Reach out anytime and we'll get back to you within 24 hours.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Support</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><p>Premium research peptides, lab-tested and produced in certified cGMP facilities.</p></div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html?cat=weight">Weight Management</a></li><li><a href="shop.html?cat=healing">Healing &amp; Recovery</a></li><li><a href="shop.html?cat=gh">Growth Hormone</a></li><li><a href="shop.html?cat=longevity">Longevity</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="shipping.html">Shipping Policy</a></li><li><a href="refund.html">Refund Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:support@novypeptideco.com">support@novypeptideco.com</a></li><li><a href="contact.html">Support Portal</a></li></ul></div>
+      </div>
+      <div class="footer-disclaimer"><strong style="color:rgba(255,255,255,0.75);">Research Disclaimer:</strong> All products sold by Novy Peptide Co. are intended strictly for in vitro research, laboratory studies, and scientific investigation. These products are not approved by the FDA for human or veterinary consumption, medical treatment, or diagnostic use.</div>
+      <div class="footer-bottom"><p>© 2026 Novy Peptide Co. All rights reserved.</p><p>For Research Use Only.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    function enterSite(){ sessionStorage.setItem('novyAge','1'); document.getElementById('ageGate').classList.add('hidden'); }
+    function exitSite(){ window.location.href='https://www.google.com'; }
+    if (sessionStorage.getItem('novyAge')==='1') document.getElementById('ageGate').classList.add('hidden');
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+    function toggleFaq(btn){
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+</body>
+</html>

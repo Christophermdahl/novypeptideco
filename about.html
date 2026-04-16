@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Novy Peptide Co. — Built for researchers who demand precision. Lab-tested, cGMP-certified, independently verified." />
+  <title>About | Novy Peptide Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="agegate-overlay" id="ageGate">
+    <div class="agegate-modal">
+      <img src="IMG_8146.jpeg" alt="Novy Peptide Co." class="agegate-logo" />
+      <h2>Verify Your Age</h2>
+      <p>You must be 21 years or older to enter this site. All products are intended for research use only.</p>
+      <div class="agegate-btns">
+        <button class="btn btn-primary btn-lg" onclick="enterSite()">I am 21 or older · Enter</button>
+        <button class="btn btn-ghost" onclick="exitSite()">I am under 21</button>
+      </div>
+      <p class="agegate-fine">By entering, you confirm you are 21+ and agree to our Terms of Service. All products are sold for in vitro research purposes only.</p>
+    </div>
+  </div>
+
+  <div class="announce">Free shipping on orders over $150 · Use code <strong>NOVY10</strong> for 10% off your first order</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><span>NOVY PEPTIDE CO.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+        <button class="icon-btn" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>About</span></div>
+      <div class="eyebrow">About Novy Peptide Co.</div>
+      <h1>Built for researchers<br/>who demand precision.</h1>
+      <p class="lede">We're a peptide company founded on a single principle: every vial should be worthy of the research it fuels. No shortcuts. No gray areas. Just pharmaceutical-grade quality, independently verified.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Our Mission</div>
+          <h2>Quality worth standing behind.</h2>
+          <p style="margin-bottom:20px; color:var(--text); line-height:1.8;">The research peptide industry is full of unverified claims, unclear sourcing, and inconsistent quality. We built Novy Peptide Co. to change that. Every peptide we ship is synthesized in certified cGMP facilities, independently verified by third-party labs, and accompanied by a batch-unique Certificate of Analysis.</p>
+          <p style="color:var(--text); line-height:1.8;">We believe serious research deserves serious raw materials — and that trust is earned one vial at a time.</p>
+          <a href="shop.html" class="btn btn-primary btn-lg" style="margin-top:28px;">Shop the Collection</a>
+        </div>
+        <div class="hero-visual">
+          <div class="vial-stack">
+            <div class="vial"></div>
+            <div class="vial"></div>
+            <div class="vial"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Our Standards</div>
+        <h2>How every vial is made.</h2>
+        <p class="lede">Four non-negotiables that define every product we ship.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l-4 8a4 4 0 0 0 3 6h8a4 4 0 0 0 3-6l-4-8V2"/><path d="M8 2h8"/></svg></div>
+          <h3>3rd-Party Verified</h3>
+          <p>Every batch is tested by an independent laboratory for purity, identity, and mass — no exceptions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>cGMP Manufacturing</h3>
+          <p>Produced in facilities that adhere to current Good Manufacturing Practice regulations and protocols.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/><path d="M9 11h6"/></svg></div>
+          <h3>Batch Transparency</h3>
+          <p>Every shipment includes a Certificate of Analysis unique to your batch. Nothing hidden, nothing inferred.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Satisfaction Guarantee</h3>
+          <p>If a batch doesn't meet our documented specifications, we replace or refund it. Your research shouldn't wait.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Process</div>
+        <h2>From synthesis to your lab.</h2>
+        <p class="lede">Every vial passes through four quality checkpoints before it reaches you.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Synthesis</h3>
+          <p>Solid-phase peptide synthesis in certified cGMP facilities by credentialed chemists.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Purification</h3>
+          <p>HPLC purification to &gt;99%, followed by lyophilization under controlled conditions.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Independent Verification</h3>
+          <p>Samples pulled from every batch are tested by an external lab for purity, mass, and identity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / PROMISE -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">The Novy Promise</div>
+        <h2 style="color:#fff;">Precision you can measure.</h2>
+        <p class="lede">The numbers behind every Novy Peptide vial.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:32px; text-align:center; max-width:900px; margin:0 auto; padding:48px 0 0;">
+        <div>
+          <div style="font-family:var(--font-display); font-size:3rem; font-weight:700; color:#fff; line-height:1;">99<span style="color:#4A9BFF;">%+</span></div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin-top:8px; letter-spacing:0.05em; text-transform:uppercase;">Verified Purity</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-size:3rem; font-weight:700; color:#fff; line-height:1;">100<span style="color:#4A9BFF;">%</span></div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin-top:8px; letter-spacing:0.05em; text-transform:uppercase;">Batch Testing</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-size:3rem; font-weight:700; color:#fff; line-height:1;">24<span style="color:#4A9BFF;">h</span></div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin-top:8px; letter-spacing:0.05em; text-transform:uppercase;">Order Fulfillment</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display); font-size:3rem; font-weight:700; color:#fff; line-height:1;">10k<span style="color:#4A9BFF;">+</span></div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin-top:8px; letter-spacing:0.05em; text-transform:uppercase;">Researchers Served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">Values</div><h2>What we stand on.</h2></div>
+      <div class="feature-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="feature-card">
+          <h3>Transparency</h3>
+          <p>We publish a Certificate of Analysis with every shipment. If you want more documentation, we'll send it. Always.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Discretion</h3>
+          <p>Plain packaging. No external branding. Your order stays between you and us — always.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Accountability</h3>
+          <p>If something isn't right, we fix it. No runaround, no hoops, no scripts. Real humans, real answers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="optin">
+        <div class="optin-copy">
+          <div class="eyebrow" style="color:#4A9BFF;">Get Started</div>
+          <h2>Ready to source with confidence?</h2>
+          <p>Browse the full Novy Peptide Co. collection or get in touch — we're happy to answer any questions before you order.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; position:relative;">
+          <a href="shop.html" class="btn btn-primary btn-lg btn-block">Shop the Collection</a>
+          <a href="contact.html" class="btn btn-ghost btn-lg btn-block" style="background:rgba(255,255,255,0.08); color:#fff; border-color:rgba(255,255,255,0.2);">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="IMG_8146.jpeg" alt="Novy Peptide Co." /><p>Premium research peptides, lab-tested and produced in certified cGMP facilities. Built for researchers who demand precision.</p></div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html?cat=weight">Weight Management</a></li><li><a href="shop.html?cat=healing">Healing &amp; Recovery</a></li><li><a href="shop.html?cat=gh">Growth Hormone</a></li><li><a href="shop.html?cat=longevity">Longevity</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="shipping.html">Shipping Policy</a></li><li><a href="refund.html">Refund Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:support@novypeptideco.com">support@novypeptideco.com</a></li><li><a href="contact.html">Support Portal</a></li></ul></div>
+      </div>
+      <div class="footer-disclaimer"><strong style="color: rgba(255,255,255,0.75);">Research Disclaimer:</strong> All products sold by Novy Peptide Co. are intended strictly for in vitro research, laboratory studies, and scientific investigation. These products are not approved by the FDA for human or veterinary consumption, medical treatment, or diagnostic use. By purchasing, you confirm you are a qualified researcher 21 years of age or older.</div>
+      <div class="footer-bottom"><p>© 2026 Novy Peptide Co. All rights reserved.</p><p>Made for research. For Research Use Only.</p></div>
+    </div>
+  </footer>
+
+  <script>
+    function enterSite(){ sessionStorage.setItem('novyAge','1'); document.getElementById('ageGate').classList.add('hidden'); }
+    function exitSite(){ window.location.href='https://www.google.com'; }
+    if (sessionStorage.getItem('novyAge')==='1') document.getElementById('ageGate').classList.add('hidden');
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+  </script>
+</body>
+</html>

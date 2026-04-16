@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Novy Peptide Co. — Premium research peptides, lab-tested and produced in certified cGMP facilities. Built for researchers who demand precision." />
+  <title>Novy Peptide Co. | Premium Research Peptides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== AGE GATE ============== -->
+  <div class="agegate-overlay" id="ageGate">
+    <div class="agegate-modal">
+      <img src="IMG_8146.jpeg" alt="Novy Peptide Co." class="agegate-logo" />
+      <h2>Verify Your Age</h2>
+      <p>You must be 21 years or older to enter this site. All products are intended for research use only.</p>
+      <div class="agegate-btns">
+        <button class="btn btn-primary btn-lg" onclick="enterSite()">I am 21 or older · Enter</button>
+        <button class="btn btn-ghost" onclick="exitSite()">I am under 21</button>
+      </div>
+      <p class="agegate-fine">By entering, you confirm you are 21+ and agree to our Terms of Service. All products are sold for in vitro research purposes only.</p>
+    </div>
+  </div>
+
+  <!-- ============== ANNOUNCEMENT ============== -->
+  <div class="announce">
+    Free shipping on orders over $150 · Use code <strong>NOVY10</strong> for 10% off your first order
+    <a href="shop.html">Shop now →</a>
+  </div>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav-brand">
+        <img src="IMG_8146.jpeg" alt="Novy Peptide Co." />
+        <span>NOVY PEPTIDE CO.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">Pharmaceutical-Grade · Lab-Tested · cGMP</div>
+          <h1>Precision Peptides<br/>for <em>Serious Research.</em></h1>
+          <p class="hero-lede">Novy Peptide Co. delivers pharmaceutical-grade peptides produced in certified cGMP facilities and independently verified for purity — so your research starts with confidence.</p>
+          <div class="hero-ctas">
+            <a href="shop.html" class="btn btn-primary btn-lg">Shop Collection</a>
+            <a href="about.html" class="btn btn-ghost btn-lg">Our Standards</a>
+          </div>
+          <div class="hero-kpis">
+            <div>
+              <div class="kpi-num">99<span>%+</span></div>
+              <div class="kpi-label">Verified Purity</div>
+            </div>
+            <div>
+              <div class="kpi-num">cGMP<span>.</span></div>
+              <div class="kpi-label">Certified Facilities</div>
+            </div>
+            <div>
+              <div class="kpi-num">24<span>h</span></div>
+              <div class="kpi-label">Order Fulfillment</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="vial-stack">
+            <div class="vial"></div>
+            <div class="vial"></div>
+            <div class="vial"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRUST STRIP ============== -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l-4 8a4 4 0 0 0 3 6h8a4 4 0 0 0 3-6l-4-8V2"/><path d="M8 2h8"/></svg></div>
+          <div><strong>3rd-Party Lab-Tested</strong><span>Every batch verified</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><strong>cGMP Certified</strong><span>Pharma-grade facilities</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <div><strong>Fast Discreet Shipping</strong><span>Orders ship in 24 hours</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div><strong>Satisfaction Guarantee</strong><span>Replacement if damaged</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURED PRODUCTS ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="eyebrow">Featured</div>
+          <h2>Most Popular Compounds</h2>
+        </div>
+        <a href="shop.html" class="btn-link">View all products →</a>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card" data-product-id="reta-10">
+          <a href="product.html?p=retatrutide-10mg">
+            <div class="product-media">
+              <span class="product-tag tag-best">Bestseller</span>
+              <div class="vial"></div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Retatrutide 10mg</h3>
+              <p class="product-blurb">Triple-agonist GLP-1/GIP/glucagon receptor compound. High-purity lyophilized powder.</p>
+              <div class="product-foot">
+                <span class="product-price">$159</span>
+                <button class="product-add" onclick="addToCart(event, 'Retatrutide 10mg')">Add</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card" data-product-id="tirz-30">
+          <a href="product.html?p=tirzepatide-30mg">
+            <div class="product-media">
+              <span class="product-tag tag-best">Bestseller</span>
+              <div class="vial"></div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Tirzepatide 30mg</h3>
+              <p class="product-blurb">Dual GIP/GLP-1 receptor agonist studied for metabolic research models.</p>
+              <div class="product-foot">
+                <span class="product-price">$199</span>
+                <button class="product-add" onclick="addToCart(event, 'Tirzepatide 30mg')">Add</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card" data-product-id="sema-30">
+          <a href="product.html?p=semaglutide-30mg">
+            <div class="product-media">
+              <span class="product-tag tag-new">New</span>
+              <div class="vial"></div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Weight Management</div>
+              <h3 class="product-name">Semaglutide 30mg</h3>
+              <p class="product-blurb">GLP-1 receptor agonist. Extensively studied compound in metabolic research.</p>
+              <div class="product-foot">
+                <span class="product-price">$149</span>
+                <button class="product-add" onclick="addToCart(event, 'Semaglutide 30mg')">Add</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card" data-product-id="bpc-10">
+          <a href="product.html?p=bpc-157-10mg">
+            <div class="product-media">
+              <span class="product-tag tag-best">Bestseller</span>
+              <div class="vial"></div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Healing &amp; Recovery</div>
+              <h3 class="product-name">BPC-157 10mg</h3>
+              <p class="product-blurb">Body Protection Compound. One of the most researched healing peptides.</p>
+              <div class="product-foot">
+                <span class="product-price">$79</span>
+                <button class="product-add" onclick="addToCart(event, 'BPC-157 10mg')">Add</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY NOVY ============== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Why Novy Peptide Co.</div>
+        <h2>Built for Researchers Who Demand More</h2>
+        <p class="lede">We hold ourselves to pharmaceutical standards — because your research deserves compounds produced with the same care.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l-4 8a4 4 0 0 0 3 6h8a4 4 0 0 0 3-6l-4-8V2"/><path d="M8 2h8"/></svg></div>
+          <h3>Independent Lab Testing</h3>
+          <p>Every lot undergoes HPLC purity analysis and mass spectrometry identity confirmation from accredited third-party labs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>cGMP Facilities</h3>
+          <p>All peptides synthesized in certified current Good Manufacturing Practice facilities with complete batch documentation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>24-Hour Fulfillment</h3>
+          <p>Orders placed before 2 PM EST ship the same day. Cold-chain packaging standard on every shipment.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Secure &amp; Private</h3>
+          <p>256-bit SSL checkout, discreet packaging, and your data is never shared. Your research stays yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STACKS / BUNDLES ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Bundles</div>
+        <h2>Premium Research Stacks</h2>
+        <p class="lede">Curated multi-compound bundles at stack pricing — built for researchers running parallel protocols.</p>
+      </div>
+      <div class="stacks-grid">
+        <div class="stack-card">
+          <div class="stack-tag">Most Popular</div>
+          <h3>60-Day Stack</h3>
+          <p>Complete 60-day research protocol. Includes Retatrutide 30mg, BPC-157 10mg, and BAC Water 30mL.</p>
+          <div class="stack-price">$299 <span class="old">$389</span></div>
+          <a href="shop.html" class="btn btn-primary">View Stack →</a>
+        </div>
+        <div class="stack-card">
+          <div class="stack-tag">Performance</div>
+          <h3>The STACK</h3>
+          <p>Elite performance-focused research protocol. Tesamorelin 20mg, CJC1295, and Sermorelin 10mg.</p>
+          <div class="stack-price">$254 <span class="old">$319</span></div>
+          <a href="shop.html" class="btn btn-primary">View Stack →</a>
+        </div>
+        <div class="stack-card">
+          <div class="stack-tag">Longevity</div>
+          <h3>KLOW Protocol</h3>
+          <p>Advanced longevity research stack. Includes NAD+ 500, GLOW, KLOW, and BAC Water.</p>
+          <div class="stack-price">$223 <span class="old">$279</span></div>
+          <a href="shop.html" class="btn btn-primary">View Stack →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HOW IT WORKS ============== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">How It Works</div>
+        <h2>Order. Ship. Research.</h2>
+        <p class="lede">A streamlined process engineered around your timeline — from catalog to cold-chain delivery.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Select Your Compounds</h3>
+          <p>Browse the full catalog or premium stacks. Every product lists verified purity data and full specifications.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Secure Checkout</h3>
+          <p>256-bit SSL encrypted payments. Credit card, ACH, or crypto — with a 5% discount on crypto orders.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Discreet Fast Delivery</h3>
+          <p>Ships within 24 hours with cold-chain packaging. Tracking provided. Domestic orders arrive in 2–4 days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Researcher Reviews</div>
+        <h2>Trusted by Serious Researchers</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Purity matched the COA exactly. Reconstitution was clean, and results have been consistent across my research protocols. Will reorder."</p>
+          <div class="review-author">
+            <div class="review-avatar">DR</div>
+            <div>
+              <div class="review-name">Dr. R. Marcos</div>
+              <div class="review-role">Independent Researcher</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Novy is my go-to supplier now. Fast fulfillment, proper cold-chain packaging, and the COAs are actually detailed. A legit operation."</p>
+          <div class="review-author">
+            <div class="review-avatar">SK</div>
+            <div>
+              <div class="review-name">S. Kim, M.Sc.</div>
+              <div class="review-role">Research Lab Associate</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Ordered three stacks over the past year. Consistency batch-to-batch is what I care about, and Novy has delivered every time. Clean brand too."</p>
+          <div class="review-author">
+            <div class="review-avatar">TH</div>
+            <div>
+              <div class="review-name">T. Hollis</div>
+              <div class="review-role">Graduate Researcher</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ PREVIEW ============== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Questions</div>
+        <h2>Frequently Asked</h2>
+        <p class="lede">Quick answers to what researchers ask most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Are Novy peptides safe for human use?
+            <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-a"><p>No. All products sold by Novy Peptide Co. are strictly for in vitro laboratory research and are not intended for human or veterinary consumption. They have not been evaluated by the FDA for safety or efficacy in humans.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you provide a Certificate of Analysis?
+            <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Yes. Every product ships with a full third-party Certificate of Analysis including HPLC purity data and mass spectrometry identity confirmation. COAs are also available on each product page.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How fast do orders ship?
+            <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-a"><p>Orders placed before 2 PM EST on business days ship the same day. Standard domestic delivery is 2–4 business days. Expedited and overnight options are available at checkout.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is your purity guarantee?
+            <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-a"><p>All compounds are guaranteed ≥98% purity. The majority of our catalog achieves ≥99% by HPLC analysis. Exact purity for each batch is listed on the Certificate of Analysis.</p></div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="faq.html" class="btn btn-ghost">View all FAQs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== OPT-IN (GHL-ready) ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="optin" id="novy-optin-form">
+        <div class="optin-copy">
+          <div class="eyebrow" style="color: var(--blue-400);">Insider Access</div>
+          <h2>Get 10% Off &amp; Early Access</h2>
+          <p>Join the Novy insider list for subscriber-only pricing, new compound announcements, and research updates. Delivered by email + SMS.</p>
+        </div>
+        <form class="optin-form" onsubmit="handleOptin(event)" data-gohighlevel-form="novy-insider-optin">
+          <input type="text" name="first_name" placeholder="First name" required />
+          <input type="email" name="email" placeholder="Email address" required />
+          <input type="tel" name="phone" placeholder="Phone (for SMS)" />
+          <label class="optin-check"><input type="checkbox" required /> I agree to receive marketing emails and SMS from Novy Peptide Co.</label>
+          <button type="submit">Get My 10% Off →</button>
+          <p class="optin-fine">By subscribing you confirm you are 21+. Unsubscribe anytime. Msg &amp; data rates may apply.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="IMG_8146.jpeg" alt="Novy Peptide Co." />
+          <p>Premium research peptides, lab-tested and produced in certified cGMP facilities. Built for researchers who demand precision.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?cat=weight">Weight Management</a></li>
+            <li><a href="shop.html?cat=healing">Healing &amp; Recovery</a></li>
+            <li><a href="shop.html?cat=gh">Growth Hormone</a></li>
+            <li><a href="shop.html?cat=longevity">Longevity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:support@novypeptideco.com">support@novypeptideco.com</a></li>
+            <li><a href="contact.html">Support Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <strong style="color: rgba(255,255,255,0.75);">Research Disclaimer:</strong> All products sold by Novy Peptide Co. are intended strictly for in vitro research, laboratory studies, and scientific investigation. These products are not approved by the FDA for human or veterinary consumption, medical treatment, or diagnostic use. By purchasing, you confirm you are a qualified researcher 21 years of age or older.
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Novy Peptide Co. All rights reserved.</p>
+        <p>Made for research. For Research Use Only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">✓ Added to cart</div>
+
+  <script>
+    // Age Gate
+    function enterSite(){ sessionStorage.setItem('novyAge','1'); document.getElementById('ageGate').classList.add('hidden'); }
+    function exitSite(){ window.location.href='https://www.google.com'; }
+    if (sessionStorage.getItem('novyAge')==='1') document.getElementById('ageGate').classList.add('hidden');
+
+    // Mobile menu
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+
+    // FAQ
+    function toggleFaq(btn){
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Cart (stub — GHL/WooCommerce will handle real cart state)
+    function addToCart(e, name){
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.textContent = '✓ ' + name + ' added to cart';
+      toast.classList.add('show');
+      const count = document.querySelector('.cart-count');
+      count.textContent = parseInt(count.textContent||'0') + 1;
+      setTimeout(()=>toast.classList.remove('show'), 2600);
+    }
+
+    // Opt-in form — replace the endpoint with your GHL webhook/form URL
+    function handleOptin(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+      // GHL integration: POST to your form webhook. Example:
+      // fetch('https://services.leadconnectorhq.com/hooks/YOUR_WEBHOOK_ID', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
+      form.innerHTML = '<div style="text-align:center; padding:20px 0;"><h3 style="color:#fff; margin-bottom:10px;">✓ You\'re on the list</h3><p style="color:rgba(255,255,255,0.75);">Check your email for your 10% off code.</p></div>';
+    }
+  </script>
+</body>
+</html>
